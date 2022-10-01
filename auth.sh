@@ -2,10 +2,10 @@
 error_reporting(E_ERROR | E_PARSE);
 ini_set('display_errors', '1');
 
-$DB_host = 'localhost';
-$DB_user = 'vpnuser';
-$DB_pass = 'vpnpass';
-$DB_name = 'vpndb';
+$DB_host = '31.22.7.45';
+$DB_user = 'immorta1_admin';
+$DB_pass = 'immorta1_admin';
+$DB_name = 'immorta1_admin';
 
 $mysqli = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
 if ($mysqli->connect_error) {
