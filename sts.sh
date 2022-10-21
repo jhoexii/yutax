@@ -152,6 +152,7 @@ echo "Installing stunnel."
 {
 cd /etc/stunnel/ || exit
 rm -rf /etc/stunnel/stunnel.conf
+echo "
 client = no
 socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
