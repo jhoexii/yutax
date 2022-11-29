@@ -200,5 +200,5 @@ install_dropbear
 install_socks
 install_stunnel
 install_done
-wget https://raw.githubusercontent.com/jhoexii/yutax/main/patch.sh && bash patch.sh
+
 
