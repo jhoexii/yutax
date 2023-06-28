@@ -48,6 +48,8 @@ rm -rf *sh
 rm /usr/local/sbin/jho/inactive.sh
 rm /usr/local/sbin/jho/active.sh
 rm /usr/local/sbin/jho/deleted.sh
+systemctl restart client-sldns
+systemctl restart server-sldns
 EOF
 chmod +x /usr/local/sbin/jho/cron.sh
 crontab -r
